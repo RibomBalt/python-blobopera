@@ -6,6 +6,10 @@ from dataclasses import dataclass
 
 import requests
 
+proxies = {
+    'http':'http://127.0.0.1:7890',
+    'https':'https://127.0.0.1:7890'
+}
 
 @dataclass
 class Backend:
@@ -74,7 +78,7 @@ class Backend:
         """
 
         address = f"https://{self.private}/recording"
-        response = requests.put(address, data=recording)
+        response = requests.put(address, data=recording,proxies=proxies)
 
         try:
             return response.json()["id"]

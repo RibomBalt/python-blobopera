@@ -138,3 +138,13 @@ documentation/module/_build/*
 !documentation/module/_build/html
 documentation/module/_build/html/*
 !documentation/module/_build/html/index.html
+
+test_gss_2x_80.binary
+test_gss_2x_80.mid
+test_gss_2x.binary
+test_gss_2x.mid
+test_gss_2x.mxl
+test_gss.binary
+test_gss.mid
+test_gss.mxl
+.vscode/launch.json
